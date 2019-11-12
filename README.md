@@ -1,5 +1,4 @@
 # flir_camera_driver 
-# forked from raabuchanan, changed the timestamp from external trigger message.
 
 [![Build Status](https://travis-ci.org/ros-drivers/flir_camera_driver.png?branch=kinetic-devel)](https://travis-ci.org/ros-drivers/flir_camera_driver)
 
