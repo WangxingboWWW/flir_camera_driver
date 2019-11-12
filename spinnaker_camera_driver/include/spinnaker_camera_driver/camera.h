@@ -70,7 +70,7 @@ public:
   readProperty(const Spinnaker::GenICam::gcstring property_name);
 
 protected:
-  Spinnaker::GenApi::INodeMap* node_map_;
+  Spinnaker::GenApi::INodeMap* node_map_;  // 重要
 
   virtual void init();
 

@@ -30,8 +30,9 @@ namespace spinnaker_camera_driver
 {
 void Camera::init()
 {
+  // 这里是CIntergerPtr
   Spinnaker::GenApi::CIntegerPtr height_max_ptr = node_map_->GetNode("HeightMax");
-  if (!IsAvailable(height_max_ptr) || !IsReadable(height_max_ptr))
+  if (!IsAvailable(height_max_ptr) || !IsReadable(height_max_ptr))  // 读参数要用IsReadable
   {
     throw std::runtime_error("[Camera::init] Unable to read HeightMax");
   }
@@ -44,7 +45,7 @@ void Camera::init()
   width_max_ = width_max_ptr->GetValue();
   // Set Throughput to maximum
   //=====================================
-  setMaxInt(node_map_, "DeviceLinkThroughputLimit");
+  setMaxInt(node_map_, "DeviceLinkThroughputLimit");  // Limits the maximum bandwidth of the data that will be streamed out by the device on the selected Link.
 }
 void Camera::setFrameRate(const float frame_rate)
 {
@@ -164,7 +165,7 @@ void Camera::setNewConfiguration(const SpinnakerConfig& config, const uint32_t& 
   }
 }
 
-// Image Size and Pixel Format
+// Image Size and Pixel Format  // 这里不用改的
 void Camera::setImageControlFormats(const spinnaker_camera_driver::SpinnakerConfig& config)
 {
   // Set Binning and Decimation

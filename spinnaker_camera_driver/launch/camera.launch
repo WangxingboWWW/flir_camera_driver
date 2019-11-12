@@ -30,13 +30,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <arg name="frame_id" default="camera" />
   <arg name="camera_serial" default="0" />
   <arg name="calibrated" default="0" />
-  <arg name="acquisition_frame_rate" default="15" />
+  <arg name="acquisition_frame_rate" default="20" />
   <arg name="acquisition_frame_rate_enable" default="false" />
 
-  <arg name="enable_trigger" default="Off" />
-  <arg name="trigger_selector" default="FrameStart" />
-  <arg name="trigger_activation_mode" default="RisingEdge" />
-  <arg name="trigger_source" default="Line3" />
+  <arg name="enable_trigger" default="On" />
+  <arg name="trigger_selector" default="FrameStart" />  # FrameStart
+  <arg name="trigger_activation_mode" default="FallingEdge" />  # RisingEdge
+  <arg name="trigger_source" default="Line2" />  # Line3
   <arg name="trigger_overlap_mode" default="ReadOut" />
 
   <arg name="exposure_auto" default="On" />

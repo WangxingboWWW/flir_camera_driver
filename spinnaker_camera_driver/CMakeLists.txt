@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.0.2)
 
+# -Wall — enables all major warnings.
+# -Wextra — enables other important warnings.
+# -Werror — make all warnings into errors, causing compilations to fail if any warnings are reported.
+
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11;-Wall;-Wextra")
 
 
@@ -8,17 +12,17 @@ project(spinnaker_camera_driver)
 find_package(catkin REQUIRED COMPONENTS
   camera_info_manager diagnostic_updater dynamic_reconfigure
   image_exposure_msgs image_transport nodelet roscpp sensor_msgs
-  wfov_camera_msgs
+  wfov_camera_msgs my_mavros_msgs
 )
 
 find_package(OpenCV REQUIRED)
 
-generate_dynamic_reconfigure_options(
+generate_dynamic_reconfigure_options(  # cfg
   cfg/Spinnaker.cfg
 )
 
 catkin_package(CATKIN_DEPENDS
-  image_exposure_msgs nodelet roscpp sensor_msgs wfov_camera_msgs
+  image_exposure_msgs nodelet roscpp sensor_msgs wfov_camera_msgs my_mavros_msgs
   DEPENDS OpenCV
 )
 

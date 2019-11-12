@@ -71,6 +71,11 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <fstream>
 #include <string>
 
+#include <my_mavros_msgs/CamIMUStamp.h>
+#include <my_mavros_msgs/CommandTriggerControl.h>
+
+#include <map>
+
 namespace spinnaker_camera_driver
 {
 class SpinnakerCameraNodelet : public nodelet::Nodelet
@@ -88,6 +93,12 @@ public:
     {
       diagThread_->interrupt();
       diagThread_->join();
+    }
+
+    if (camImuThread_)
+    {
+      camImuThread_->interrupt();
+      camImuThread_->join();
     }
 
     if (pubThread_)
@@ -110,6 +121,20 @@ public:
   }
 
 private:
+
+    void camImuStampCallback(const my_mavros_msgs::CamIMUStamp::ConstPtr& msg)
+    {
+
+      std::lock_guard<std::mutex> trigger_lock(trigger_mutex_);
+
+      ros::Time time = msg->frame_stamp;
+      int32_t id = msg->frame_seq_id;
+      //ROS_WARN("current id is:%d",id);
+      //ROS_WARN("time stamp get is: %f", time.toSec());
+      triggerId2ImuStamp.insert(std::pair<uint32_t, ros::Time>(id, time));
+    }
+
+
   /*!
   * \brief Function that allows reconfiguration of the camera.
   *
@@ -177,6 +202,7 @@ private:
           new boost::thread(boost::bind(&spinnaker_camera_driver::SpinnakerCameraNodelet::diagPoll, this)));
     }
   }
+
 
   /*!
   * \brief Connection callback to only do work when someone is listening.
@@ -296,7 +322,7 @@ private:
 
     NODELET_DEBUG_ONCE("Using camera serial %d", serial);
 
-    spinnaker_.setDesiredCamera((uint32_t)serial);
+    spinnaker_.setDesiredCamera((uint32_t)serial);  // unuse
 
     // Get GigE camera parameters:  // 我不是GigE相机
     pnh.param<int>("packet_size", packet_size_, 1400);
@@ -312,7 +338,7 @@ private:
     // Get the desired frame_id, set to 'camera' if not found
     pnh.param<std::string>("frame_id", frame_id_, "camera");
     // Do not call the connectCb function until after we are done initializing.
-    std::lock_guard<std::mutex> scopedLock(connect_mutex_);
+    std::lock_guard<std::mutex> scopedLock(connect_mutex_);  // 这个锁?
 
     // paramCallback我现在先跳过, 需要看SpinnakerConfig类
     // Start up the dynamic_reconfigure service, note that this needs to stick around after this function ends
@@ -331,6 +357,36 @@ private:
     it_.reset(new image_transport::ImageTransport(nh));
     image_transport::SubscriberStatusCallback cb = boost::bind(&SpinnakerCameraNodelet::connectCb, this);
     it_pub_ = it_->advertiseCamera("image_raw", 5, cb, cb);
+
+    NODELET_WARN("set the subscriber to /mavros/cam_imu_sync/cam_imu_stamp");
+    trigger_sub_ = nh.subscribe("/mavros/cam_imu_sync/cam_imu_stamp", 1000, &SpinnakerCameraNodelet::camImuStampCallback, this);
+    NODELET_WARN("set the subscriber to /mavros/cam_imu_sync/cam_imu_stamp done");
+
+
+  /*if(image_counter_ == 0){
+      NODELET_WARN("call the trigger control service");
+      client_ = getMTNodeHandle().serviceClient<my_mavros_msgs::CommandTriggerControl>("/mavros/cmd/trigger_control");
+
+      //client_ = getMTNodeHandle().serviceClient<my_mavros_msgs::CommandTriggerControl>("/mavros/cmd/trigger_control");
+      my_mavros_msgs::CommandTriggerControl srv;
+      srv.request.trigger_enable = true;
+      srv.request.sequence_reset = true;
+      srv.request.trigger_pause = false;
+
+
+      if (client_.call(srv))
+      {
+          ROS_WARN("Is successful: %d", srv.response.success);
+          ROS_WARN("Result is : %d", srv.response.result);
+      }
+      else
+      {
+          ROS_ERROR("Failed to call service.");
+      }
+      NODELET_WARN("call the trigger control service done");
+  }*/
+
+
 
     // Set up diagnostics
     updater_.setHardwareID("spinnaker_camera " + cinfo_name.str());
@@ -416,6 +472,7 @@ private:
     }
   }
 
+
   /*!
   * \brief Function for the boost::thread to grabImages and publish them.
   *
@@ -436,7 +493,7 @@ private:
       STARTED
     };
 
-    State state = DISCONNECTED;  // 首次默认state
+    State state = DISCONNECTED;  // 首次为DISCONNETED, 之后在循环中不断改变
     State previous_state = NONE;
 
     while (!boost::this_thread::interruption_requested())  // Block until we need to stop this thread.
@@ -509,7 +566,7 @@ private:
             NODELET_DEBUG("Connected to camera.");
 
             // Set last configuration, forcing the reconfigure level to stop
-            spinnaker_.setNewConfiguration(config_, SpinnakerCamera::LEVEL_RECONFIGURE_STOP);
+            spinnaker_.setNewConfiguration(config_, SpinnakerCamera::LEVEL_RECONFIGURE_STOP);  // 初始时刻会设置参数?
 
             // Set the timeout for grabbing images.
             try
@@ -550,11 +607,12 @@ private:
           // Try starting the camera
           try
           {
-            NODELET_DEBUG("Starting camera.");
+            NODELET_WARN("Starting camera.");
             spinnaker_.start();
-            NODELET_DEBUG("Started camera.");
+            NODELET_WARN("Started camera.");
             NODELET_DEBUG("Attention: if nothing subscribes to the camera topic, the camera_info is not published "
                           "on the correspondent topic.");
+
             state = STARTED;
           }
           catch (std::runtime_error& e)
@@ -576,6 +634,8 @@ private:
             NODELET_DEBUG_ONCE("Starting a new grab from camera with serial {%d}.", spinnaker_.getSerial());
             spinnaker_.grabImage(&wfov_image->image, frame_id_);
 
+
+
             // Set other values
             wfov_image->header.frame_id = frame_id_;
 
@@ -586,6 +646,10 @@ private:
             // wfov_image->temperature = spinnaker_.getCameraTemperature();
 
             ros::Time time = ros::Time::now(); // fuck...
+
+            //ROS_WARN("time stamp get by ros::Time::now() is: %d.%d", time.sec, time.nsec);
+            ROS_WARN("time stamp get by ros::Time::now() 2  is: %f", time.toSec());
+
             wfov_image->header.stamp = time;
             wfov_image->image.header.stamp = time;
             wfov_image->image.header.seq = image_counter_;
@@ -603,6 +667,47 @@ private:
             ci_->roi.height = roi_height_;
             ci_->roi.width = roi_width_;
             ci_->roi.do_rectify = do_rectify_;
+
+            {
+              std::lock_guard<std::mutex> trigger_lock(trigger_mutex_);
+
+              std::map<uint32_t, ros::Time>::iterator iter;
+              iter = triggerId2ImuStamp.find(wfov_image->image.header.seq);  // seq在pkg中不断++
+              if(iter !=triggerId2ImuStamp.end()){
+                ros::Time imuTime = triggerId2ImuStamp.at(wfov_image->image.header.seq);
+                wfov_image->header.stamp = imuTime;
+                wfov_image->image.header.stamp = imuTime;
+
+                ci_->header.stamp = imuTime;  // ci_和wfov_image中的时间戳都要改!
+                ci_->header.seq = iter->first;
+
+                ROS_WARN("current id is %d", iter->first);
+                ROS_WARN("time stamp get by trigger is: %f", imuTime.toSec());
+                triggerId2ImuStamp.erase(iter);
+              }
+              else if (iter == triggerId2ImuStamp.end() && triggerId2ImuStamp.empty()){
+                /// 因为ROS的传输延时, 相机被触发后不会立即接受到msg???
+                ROS_WARN("Have not recieved msg from /mavros/cam_imu_sync/cam_imu_stamp");
+                //image_counter_ = 0;
+              }
+              else if (iter == triggerId2ImuStamp.end() && !triggerId2ImuStamp.empty() && wfov_image->image.header.seq ==0){
+                ROS_WARN("the first seq num recieved from /mavros/cam_imu_sync/cam_imu_stamp is %d", triggerId2ImuStamp.begin()->first);
+                ROS_WARN("the first timestamp recieved from /mavros/cam_imu_sync/cam_imu_stamp is %f", triggerId2ImuStamp.begin()->second.toSec());
+                wfov_image->image.header.seq = triggerId2ImuStamp.begin()->first;
+                wfov_image->header.stamp = triggerId2ImuStamp.begin()->second;
+                wfov_image->image.header.stamp = triggerId2ImuStamp.begin()->second;
+
+                ci_->header.stamp = triggerId2ImuStamp.begin()->second;
+                ci_->header.seq = triggerId2ImuStamp.begin()->first;
+
+                image_counter_ = triggerId2ImuStamp.begin()->first;
+                image_counter_ ++;
+              }
+              else {
+                ROS_WARN("check what happened!");
+              }
+
+            }
 
             wfov_image->info = *ci_;
 
@@ -678,17 +783,25 @@ private:
   /// requirements
   ros::Subscriber sub_;  ///< Subscriber for gain and white balance changes.
 
+  ros::ServiceClient client_;  ///< Serviceclient for trigger_control.
+  std::map<uint32_t, ros::Time> triggerId2ImuStamp;
+  ros::Subscriber trigger_sub_;
+  std::mutex trigger_mutex_;
+
   std::mutex connect_mutex_;
 
   diagnostic_updater::Updater updater_;  ///< Handles publishing diagnostics messages.
   double min_freq_;
   double max_freq_;
 
+  //
   SpinnakerCamera spinnaker_;      ///< Instance of the SpinnakerCamera library, used to interface with the hardware.
   sensor_msgs::CameraInfoPtr ci_;  ///< Camera Info message.
   std::string frame_id_;           ///< Frame id for the camera messages, defaults to 'camera'
   std::shared_ptr<boost::thread> pubThread_;  ///< The thread that reads and publishes the images.
   std::shared_ptr<boost::thread> diagThread_;  ///< The thread that reads and publishes the diagnostics.
+
+  std::shared_ptr<boost::thread> camImuThread_;
 
   std::unique_ptr<DiagnosticsManager> diag_man;
 

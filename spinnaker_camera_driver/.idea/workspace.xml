@@ -2,97 +2,102 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="roslint_spinnaker_camera_driver" />
-      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslaunch-check" />
-      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslint_package" />
+      <config projectName="spinnaker_camera_driver" targetName="gtest" />
+      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="clean_test_results_spinnaker_camera_driver" />
-      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslint" />
-      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslaunch-check_launch_camera.launch" />
-      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver" />
       <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="gmock_main" />
+      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslaunch-check_launch_camera.launch" />
+      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_py" />
       <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="Camera" />
+      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver" />
+      <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_py" />
       <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslint" />
-      <config projectName="spinnaker_camera_driver" targetName="spinnaker_camera_driver_gencfg" />
-      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="tests" />
-      <config projectName="spinnaker_camera_driver" targetName="doxygen" />
+      <config projectName="spinnaker_camera_driver" targetName="my_mavros_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslint" />
+      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_lisp" />
       <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_cpp" />
       <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_gencfg" />
-      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslint_package" />
-      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="SpinnakerCameraLib" />
-      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslint_package" />
-      <config projectName="spinnaker_camera_driver" targetName="Camera" />
-      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="Cm3" />
-      <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="gmock_main" />
-      <config projectName="spinnaker_camera_driver" targetName="run_tests" />
-      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="roslint" />
-      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="download_extra_data" />
-      <config projectName="spinnaker_camera_driver" targetName="spinnaker_test_node" />
-      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="SpinnakerCameraNodelet" />
-      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver" />
-      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="spinnaker_camera_driver_gencfg" />
       <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_cpp" />
-      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslaunch-check_launch_camera.launch" />
       <config projectName="spinnaker_camera_driver" targetName="gmock" />
-      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver" />
-      <config projectName="spinnaker_camera_driver" targetName="Diagnostics" />
-      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="gtest_main" />
-      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_eus" />
-      <config projectName="spinnaker_camera_driver" targetName="spinnaker_camera_node" />
-      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="roslint_spinnaker_camera_driver" />
+      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_cpp" />
       <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_nodejs" />
-      <config projectName="spinnaker_camera_driver" targetName="gtest" />
-      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslaunch-check" />
+      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="doxygen" />
+      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="my_mavros_msgs_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslint" />
+      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="roslint" />
+      <config projectName="spinnaker_camera_driver" targetName="SpinnakerCameraNodelet" />
+      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslaunch-check_launch_camera.launch" />
+      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_nodejs" />
       <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_lisp" />
-      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="statistics_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="Cm3" />
+      <config projectName="spinnaker_camera_driver" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslint_package" />
+      <config projectName="spinnaker_camera_driver" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="image_exposure_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="SpinnakerCameraLib" />
+      <config projectName="spinnaker_camera_driver" targetName="wfov_camera_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="run_tests" />
+      <config projectName="spinnaker_camera_driver" targetName="download_extra_data" />
+      <config projectName="spinnaker_camera_driver" targetName="my_mavros_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="gtest_main" />
+      <config projectName="spinnaker_camera_driver" targetName="_run_tests_spinnaker_camera_driver_roslaunch-check" />
+      <config projectName="spinnaker_camera_driver" targetName="tests" />
+      <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="spinnaker_camera_driver" targetName="Diagnostics" />
+      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="bond_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="clean_test_results_spinnaker_camera_driver" />
+      <config projectName="spinnaker_camera_driver" targetName="spinnaker_camera_node" />
+      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="spinnaker_camera_driver" targetName="run_tests_spinnaker_camera_driver_roslaunch-check" />
+      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="spinnaker_test_node" />
+      <config projectName="spinnaker_camera_driver" targetName="my_mavros_msgs_generate_messages_eus" />
       <config projectName="spinnaker_camera_driver" targetName="clean_test_results" />
-      <config projectName="spinnaker_camera_driver" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="spinnaker_camera_driver" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="nodelet_generate_messages_py" />
+      <config projectName="spinnaker_camera_driver" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="my_mavros_msgs_generate_messages_lisp" />
+      <config projectName="spinnaker_camera_driver" targetName="diagnostic_msgs_generate_messages_eus" />
+      <config projectName="spinnaker_camera_driver" targetName="roscpp_generate_messages_cpp" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -114,40 +119,57 @@
     <session id="1714478551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="13" />
-          <entry key="h" value="24" />
-          <entry key="hpp" value="1" />
-          <entry key="launch" value="4" />
-          <entry key="txt" value="1" />
+          <entry key="cfg" value="2" />
+          <entry key="cpp" value="27" />
+          <entry key="h" value="76" />
+          <entry key="hpp" value="3" />
+          <entry key="launch" value="8" />
+          <entry key="map" value="2" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="1" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="38" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="ObjectiveC" value="108" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="2" />
+          <entry key="XML" value="1" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="382" />
-          <entry key="launch" value="52" />
-          <entry key="txt" value="38" />
+          <entry key="cpp" value="2484" />
+          <entry key="h" value="84" />
+          <entry key="launch" value="78" />
+          <entry key="txt" value="63" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="38" />
-          <entry key="Doxygen file" value="39" />
-          <entry key="ObjectiveC" value="343" />
-          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="CMakeLists.txt" value="63" />
+          <entry key="Doxygen file" value="42" />
+          <entry key="ObjectiveC" value="2526" />
+          <entry key="PLAIN_TEXT" value="78" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -156,32 +178,23 @@
     <favorites_list name="spinnaker_camera_driver" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/launch/camera.launch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="82" column="56" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SpinnakerCamera.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="465" column="2" lean-forward="true" selection-start-line="465" selection-start-column="2" selection-end-line="465" selection-end-column="2" />
+            <state relative-caret-position="1144">
+              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/SpinnakerCamera.h">
+        <entry file="file://$PROJECT_DIR$/src/SpinnakerCamera.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1769">
-              <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+            <state relative-caret-position="-3058">
+              <caret line="324" column="79" lean-forward="true" selection-start-line="324" selection-start-column="79" selection-end-line="324" selection-end-column="79" />
               <folding>
-                <element signature="e#2934#2956#0" expanded="true" />
+                <element signature="e#2260#2312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,51 +203,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///usr/include/spinnaker/CameraBase.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+            <state relative-caret-position="515">
+              <caret line="173" column="17" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/SpinnakerCamera.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="180" column="23" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
+              <folding>
+                <element signature="e#2934#2956#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nodelet.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="576" column="26" selection-start-line="576" selection-start-column="26" selection-end-line="576" selection-end-column="26" />
+            <state relative-caret-position="598">
+              <caret line="386" column="5" selection-start-line="386" selection-start-column="5" selection-end-line="386" selection-end-column="5" />
               <folding>
                 <element signature="e#2523#2543#0" expanded="true" />
-                <element signature="e#17358#18025#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diagnostics.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-776">
-              <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/diagnostics.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-              <folding>
-                <element signature="e#1922#1974#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///opt/ros/kinetic/include/camera_info_manager/camera_info_manager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3338">
-              <caret line="177" column="2" selection-start-line="177" selection-start-column="2" selection-end-line="177" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -242,21 +236,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///opt/ros/kinetic/include/nodelet/nodelet.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="201">
               <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///opt/ros/kinetic/include/wfov_camera_msgs/WFOVImage.h">
+        <entry file="file://$PROJECT_DIR$/package.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="90" column="59" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="59" />
-              <folding>
-                <element signature="e#174#191#0" expanded="true" />
-                <element signature="e#492#518#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1248">
+              <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -265,25 +264,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spinnaker_camera_driver</find>
-      <find>RunS</find>
-      <find>nodelet</find>
-      <find>camera_nodelet_manager</find>
-      <find>install</find>
-      <find>Spinnaker_LIBRARIES</find>
-      <find>Spinnaker_LIB_DIR</find>
-      <find>SpinnakerCameraLib</find>
-      <find>Spinnaker_camera_driver</find>
-      <find>boost::thread</find>
-      <find>thread</find>
-      <find>serial</find>
-      <find>camera_serial</find>
       <find>packet_size</find>
       <find>camera_info_url</find>
       <find>pubThread_</find>
       <find>calibrated</find>
       <find>ros::Publisher</find>
       <find>GetImageStatus</find>
+      <find>trigger_source</find>
+      <find>enable_trigger</find>
+      <find>serial</find>
+      <find>Using Serial</find>
+      <find>Number of cameras detected</find>
+      <find>camera_serial_path</find>
+      <find>DeviceModelName</find>
+      <find>DeviceLinkThroughputLimit</find>
+      <find>SpinnakerCameraLib</find>
+      <find>AcquisitionFrameRateEnabled</find>
+      <find>camera_info_manager</find>
+      <find>Camera</find>
+      <find>AcquisitionStart</find>
+      <find>trigger_overlap_mode</find>
+      <find>spinnaker_camera_node</find>
+      <find>TriggerSelector</find>
+      <find>Detected device type</find>
+      <find>image_exposure_sequence</find>
+      <find>trigger_activation_mode</find>
+      <find>set to</find>
+      <find>Camera model name:</find>
+      <find>trigger_lock</find>
+      <find>Can't clear a camera because something still holds a reference to the camera</find>
+      <find>devicePoll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -292,12 +302,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/launch/diagnostics.launch" />
-        <option value="$PROJECT_DIR$/launch/camera.launch" />
-        <option value="$PROJECT_DIR$/src/SpinnakerCamera.cpp" />
         <option value="$PROJECT_DIR$/src/node.cpp" />
         <option value="$PROJECT_DIR$/src/diagnostics.cpp" />
+        <option value="$PROJECT_DIR$/include/spinnaker_camera_driver/camera.h" />
+        <option value="$PROJECT_DIR$/src/camera.cpp" />
+        <option value="$PROJECT_DIR$/launch/camera.launch" />
+        <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/spinnaker_camera_driver/SpinnakerCamera.h" />
+        <option value="$PROJECT_DIR$/src/SpinnakerCamera.cpp" />
         <option value="$PROJECT_DIR$/src/nodelet.cpp" />
       </list>
     </option>
@@ -308,12 +322,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1818" />
-    <option name="y" value="133" />
-    <option name="width" value="1519" />
-    <option name="height" value="905" />
+    <option name="x" value="80" />
+    <option name="y" value="30" />
+    <option name="width" value="1841" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -328,11 +342,6 @@
               <item name="spinnaker_camera_driver" type="b2602c69:ProjectViewProjectNode" />
               <item name="spinnaker_camera_driver" type="47feb1d3:ProjectViewModuleNode" />
             </path>
-            <path>
-              <item name="spinnaker_camera_driver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spinnaker_camera_driver" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="spinnaker_camera_driver" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -344,27 +353,6 @@
               <item name="spinnaker_camera_driver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-            <path>
-              <item name="spinnaker_camera_driver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="include" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spinnaker_camera_driver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="include" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="spinnaker_camera_driver" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spinnaker_camera_driver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="launch" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spinnaker_camera_driver" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -373,7 +361,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../vi-semantic_slam/src/SVI-Fusion/vio_estimator/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -702,6 +690,31 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="my_mavros_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="spinnaker_camera_driver" TARGET_NAME="my_mavros_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="my_mavros_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="spinnaker_camera_driver" TARGET_NAME="my_mavros_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="my_mavros_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="spinnaker_camera_driver" TARGET_NAME="my_mavros_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="my_mavros_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="spinnaker_camera_driver" TARGET_NAME="my_mavros_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="my_mavros_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="spinnaker_camera_driver" TARGET_NAME="my_mavros_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="nodelet_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="spinnaker_camera_driver" TARGET_NAME="nodelet_generate_messages_cpp" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -977,6 +990,11 @@
       <item itemvalue="Application.image_exposure_msgs_generate_messages_lisp" />
       <item itemvalue="Application.image_exposure_msgs_generate_messages_nodejs" />
       <item itemvalue="Application.image_exposure_msgs_generate_messages_py" />
+      <item itemvalue="Application.my_mavros_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.my_mavros_msgs_generate_messages_eus" />
+      <item itemvalue="Application.my_mavros_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.my_mavros_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.my_mavros_msgs_generate_messages_py" />
       <item itemvalue="Application.nodelet_generate_messages_cpp" />
       <item itemvalue="Application.nodelet_generate_messages_eus" />
       <item itemvalue="Application.nodelet_generate_messages_lisp" />
@@ -1043,24 +1061,36 @@
       <option name="presentableId" value="Default" />
       <updated>1571294695545</updated>
       <workItem from="1571294697334" duration="13343000" />
+      <workItem from="1573177424758" duration="28623000" />
+      <workItem from="1573298785046" duration="1073000" />
+      <workItem from="1573300118767" duration="30000" />
+      <workItem from="1573300176041" duration="80000" />
+      <workItem from="1573300724135" duration="8000" />
+      <workItem from="1573303362929" duration="86000" />
+      <workItem from="1573376525149" duration="597000" />
+      <workItem from="1573463927141" duration="10112000" />
+      <workItem from="1573478556475" duration="3038000" />
+      <workItem from="1573483322357" duration="1090000" />
+      <workItem from="1573538644401" duration="9399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13343000" />
+    <option name="totallyTimeSpent" value="67479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="30" width="1920" height="1050" extended-state="6" />
+    <frame x="80" y="-5" width="1841" height="1086" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" sideWeight="0.2780338" side_tool="true" visible="true" weight="0.18991417" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.7219662" visible="true" weight="0.18991417" />
+      <window_info id="Favorites" order="0" sideWeight="0.2780338" side_tool="true" weight="0.18991417" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.7219662" visible="true" weight="0.1912507" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="3" weight="0.18514532" />
+      <window_info anchor="bottom" id="CMake" order="3" weight="0.2863294" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info active="true" anchor="bottom" id="Find" order="5" visible="true" weight="0.27181208" />
+      <window_info active="true" anchor="bottom" id="Find" order="5" visible="true" weight="0.23143165" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
@@ -1080,116 +1110,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/cm3.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/spinnaker/System.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/spinnaker/Interface/ISystem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/spinnaker/SystemPtr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/spinnaker/SpinGenApi/INodeMap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spinnaker_test_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/test_spinnaker.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="26" column="104" lean-forward="true" selection-start-line="26" selection-start-column="104" selection-end-line="26" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/diagnostics.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="302" column="11" lean-forward="true" selection-start-line="302" selection-start-column="11" selection-end-line="302" selection-end-column="11" />
-          <folding>
-            <element signature="e#1636#1679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="92" column="20" selection-start-line="92" selection-start-column="2" selection-end-line="92" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cm3.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#1633#1673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/camera.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-          <folding>
-            <element signature="e#1903#1925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding>
-            <element signature="e#2264#2284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/ros/kinetic/include/diagnostic_msgs/KeyValue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/spinnaker/SpinGenApi/IString.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -1218,10 +1138,246 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///opt/ros/kinetic/include/ros/node_handle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="2119" column="7" selection-start-line="2119" selection-start-column="7" selection-end-line="2119" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/rosconsole/macros_generated.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="161" column="91" selection-start-line="161" selection-start-column="91" selection-end-line="161" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/ros/time.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/include/spinnaker/Interface/IImage.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="251">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/image_transport/camera_publisher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-487">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/image_transport/image_transport.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/Interface/ISystem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/wfov_camera_msgs/WFOVImage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/diagnostic_updater/diagnostic_updater.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="405" column="9" lean-forward="true" selection-start-line="405" selection-start-column="9" selection-end-line="405" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diagnostics.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/System.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/test_spinnaker.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="26" column="104" lean-forward="true" selection-start-line="26" selection-start-column="104" selection-end-line="26" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/diagnostics.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/nodelet/loader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/cm3.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/Camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/CameraPtr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/SpinGenApi/Pointer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="423" column="20" selection-start-line="423" selection-start-column="20" selection-end-line="423" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/SpinGenApi/SpinnakerGenApi.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/spinnaker/SpinGenApi/INodeMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/SpinGenApi/IInteger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/dynamic_reconfigure/ParamDescription.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/dynamic_reconfigure/server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/boost/function/function_fwd.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/diagnostics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params/analyzer.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/Spinnaker.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="189" column="48" selection-start-line="189" selection-start-column="48" selection-end-line="189" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cm3.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/spinnaker/SpinGenApi/IEnumeration.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+          <folding>
+            <element signature="e#1636#1679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../devel/include/my_mavros_msgs/CommandTriggerControl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/set_property.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="63" column="87" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/map">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/camera_info_manager/camera_info_manager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="181" column="39" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1232,101 +1388,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/ros/kinetic/include/ros/node_handle.h">
+    <entry file="file://$PROJECT_DIR$/../../../devel/include/my_mavros_msgs/CommandTriggerControlRequest.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="2119" column="7" selection-start-line="2119" selection-start-column="7" selection-end-line="2119" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/ros/kinetic/include/wfov_camera_msgs/WFOVImage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="90" column="59" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="59" />
-          <folding>
-            <element signature="e#174#191#0" expanded="true" />
-            <element signature="e#492#518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/ros/kinetic/include/nodelet/nodelet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/launch/camera.launch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="82" column="56" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="56" />
+        <state relative-caret-position="1144">
+          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/ros/kinetic/include/image_transport/image_transport.h">
+    <entry file="file://$PROJECT_DIR$/package.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="119" column="94" lean-forward="true" selection-start-line="119" selection-start-column="94" selection-end-line="119" selection-end-column="94" />
+        <state relative-caret-position="1248">
+          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/spinnaker/CameraBase.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/ros/kinetic/include/camera_info_manager/camera_info_manager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3338">
-          <caret line="177" column="2" selection-start-line="177" selection-start-column="2" selection-end-line="177" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/diagnostics.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding>
-            <element signature="e#1922#1974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diagnostics.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-776">
-          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nodelet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="576" column="26" selection-start-line="576" selection-start-column="26" selection-end-line="576" selection-end-column="26" />
-          <folding>
-            <element signature="e#2523#2543#0" expanded="true" />
-            <element signature="e#17358#18025#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="598">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/spinnaker_camera_driver/SpinnakerCamera.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1769">
-          <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+        <state relative-caret-position="553">
+          <caret line="180" column="23" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
           <folding>
             <element signature="e#2934#2956#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/spinnaker/CameraBase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="173" column="17" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/nodelet/nodelet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../devel/include/my_mavros_msgs/CamIMUStamp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SpinnakerCamera.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="465" column="2" lean-forward="true" selection-start-line="465" selection-start-column="2" selection-end-line="465" selection-end-column="2" />
+        <state relative-caret-position="-3058">
+          <caret line="324" column="79" lean-forward="true" selection-start-line="324" selection-start-column="79" selection-end-line="324" selection-end-column="79" />
+          <folding>
+            <element signature="e#2260#2312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nodelet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="386" column="5" selection-start-line="386" selection-start-column="5" selection-end-line="386" selection-end-column="5" />
+          <folding>
+            <element signature="e#2523#2543#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -62,6 +62,9 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "Spinnaker.h"
 #include "SpinGenApi/SpinnakerGenApi.h"
 
+#include <my_mavros_msgs/CamIMUStamp.h>
+#include <my_mavros_msgs/CommandTriggerControl.h>
+
 namespace spinnaker_camera_driver
 {
 class SpinnakerCamera
@@ -69,6 +72,8 @@ class SpinnakerCamera
 public:
   SpinnakerCamera();
   ~SpinnakerCamera();
+
+  //void camImuStampCallback(const my_mavros_msgs::CamIMUStamp::ConstPtr& msg);
 
   /*!
   * \brief Function that allows reconfiguration of the camera.
@@ -181,6 +186,7 @@ private:
 
   Spinnaker::ChunkData image_metadata_;
 
+  // 在配置参数函数中, 和disconnect, grabImage开头上锁
   std::mutex mutex_;  ///< A mutex to make sure that we don't try to grabImages while reconfiguring or vice versa.
   volatile bool captureRunning_;  ///< A status boolean that checks if the camera has been started and is loading images
                                   ///  into its buffer.

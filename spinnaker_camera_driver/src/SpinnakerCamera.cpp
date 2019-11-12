@@ -53,7 +53,7 @@ namespace spinnaker_camera_driver
 {
 SpinnakerCamera::SpinnakerCamera()
   : serial_(0)
-  , system_(Spinnaker::System::GetInstance())
+  , system_(Spinnaker::System::GetInstance())  // system_, camList_是sdk初始化相机最开始的两句话
   , camList_(system_->GetCameras())
   , pCam_(static_cast<int>(NULL))  // Hack to suppress compiler warning. Spinnaker has only one contructor which takes
                                    // an int
@@ -61,7 +61,7 @@ SpinnakerCamera::SpinnakerCamera()
   , captureRunning_(false)
 {
   unsigned int num_cameras = camList_.GetSize();
-  ROS_INFO_STREAM_ONCE("[SpinnakerCamera]: Number of cameras detected: " << num_cameras);
+  ROS_INFO_STREAM_ONCE("[SpinnakerCamera]: Number of cameras detected: " << num_cameras);  // 有此句输出, 确认进入到构造函数中了
 }
 
 SpinnakerCamera::~SpinnakerCamera()
@@ -85,7 +85,9 @@ void SpinnakerCamera::setNewConfiguration(const spinnaker_camera_driver::Spinnak
   {
     ROS_DEBUG("SpinnakerCamera::setNewConfiguration: Reconfigure Stop.");
     bool capture_was_running = captureRunning_;
-    start();  // For some reason some params only work after aquisition has be started once.
+
+    // start函数中也将captureRunning_设置为true
+    start();  // For some reason some params only work after aquisition has be started once.  // 所以要先start一下喽?
     stop();
     camera_->setNewConfiguration(config, level);
     if (capture_was_running)
@@ -133,10 +135,10 @@ Spinnaker::GenApi::CNodePtr SpinnakerCamera::readProperty(const Spinnaker::GenIC
 
 void SpinnakerCamera::connect()
 {
-  if (!pCam_)
+  if (!pCam_)  // pCam_ == false
   {
     // If we have a specific camera to connect to (specified by a serial number)
-    if (serial_ != 0)
+    if (serial_ != 0)  // 应该不会到这里来
     {
       const auto serial_string = std::to_string(serial_);
 
@@ -150,12 +152,12 @@ void SpinnakerCamera::connect()
                                  serial_string + ". Is that camera plugged in? Error: " + std::string(e.what()));
       }
     }
-    else
+    else  // serial_ == 0, 构造函数
     {
       // Connect to any camera (the first)
       try
       {
-        pCam_ = camList_.GetByIndex(0);
+        pCam_ = camList_.GetByIndex(0);  // 第三步
       }
       catch (const Spinnaker::Exception& e)
       {
@@ -171,7 +173,8 @@ void SpinnakerCamera::connect()
     try
     {
       // Check Device type and save serial for reconnecting
-      Spinnaker::GenApi::INodeMap& genTLNodeMap = pCam_->GetTLDeviceNodeMap();
+      Spinnaker::GenApi::INodeMap& genTLNodeMap = pCam_->GetTLDeviceNodeMap();  // Gets a reference to the node map that is generated from a GenICam
+                                                                                // XML file for the GenTL Device module.
 
       if (serial_ == 0)
       {
@@ -217,10 +220,10 @@ void SpinnakerCamera::connect()
     try
     {
       // Initialize Camera
-      pCam_->Init();
+      pCam_->Init();  // 第四步
 
       // Retrieve GenICam nodemap
-      node_map_ = &pCam_->GetNodeMap();
+      node_map_ = &pCam_->GetNodeMap();  // Gets a reference to the node map that is generated from a GenICam XML file
 
       // detect model and set camera_ accordingly;
       Spinnaker::GenApi::CStringPtr model_name = node_map_->GetNode("DeviceModelName");
@@ -230,7 +233,7 @@ void SpinnakerCamera::connect()
       if (model_name_str.find("Blackfly S") != std::string::npos)
         camera_.reset(new Camera(node_map_));
       else if (model_name_str.find("Chameleon3") != std::string::npos)
-        camera_.reset(new Cm3(node_map_));  // 这里
+        camera_.reset(new Cm3(node_map_));  // 这里!!!!! TODO: 记录一下非常重要的地方
       else
       {
         camera_.reset(new Camera(node_map_));
@@ -341,8 +344,17 @@ void SpinnakerCamera::grabImage(sensor_msgs::Image* image, const std::string& fr
       else
       {
         // Set Image Time Stamp
-        image->header.stamp.sec = image_ptr->GetTimeStamp() * 1e-9;
+        image->header.stamp.sec = image_ptr->GetTimeStamp() * 1e-6;
         image->header.stamp.nsec = image_ptr->GetTimeStamp();
+
+        uint64_t timestamp_ = image_ptr->GetTimeStamp();
+        std::string strtimestamp_ = std::to_string(timestamp_);
+        std::string strtimestampnsec_ = strtimestamp_.substr(10);
+
+
+        //ROS_WARN("time stamp get by org camera sdk is: size_t:%zd", timestamp_);
+        //ROS_WARN("time stamp get by camera sdk is: %f", image->header.stamp.toSec());
+        //ROS_WARN("time stamp get by camera sdk 2 is: %d.%d", image->header.stamp.sec, image->header.stamp.nsec);
 
         // Check the bits per pixel.
         size_t bitsPerPixel = image_ptr->GetBitsPerPixel();
